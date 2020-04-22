@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  }
+body {
+  background: black;
+}
+header {
+  background: black;
+  width: 1000px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -500px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav {
+  width: 700px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+a {
+  display: block;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+/*   background: orange; */
+}
+main{
+  width: 1000px;
+  margin-top: 75px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 21px;
+  letter-spacing: -0.3px;
+  line-height: 1.6;
+  color: #222;
+}
+section {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+aside {
+  width: 40%;
+}
+div {
+  width: 60%;
+  padding: 40px;
+}
+.title {
+  background-image: url('http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png');
+/*   background-size: 400px; */
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  position: relative;
+}
+h1{
+  font-family: 'Abril Fatface', cursive;
+  color: #222;
+  position: absolute;
+  font-size: 85px;
+  left: 50px;
+  bottom: -60px;
+  padding-bottom: 0px;
+  line-height: 1;
+}
+h2 {
+  font-family: 'Abril Fatface', cursive;
+  color: #222;
+  position: absolute;
+  left: 50px;
+  bottom: 150px;
+  font-size: 39px;
+  padding-bottom: 0px;
+}
+blockquote {
+  margin-left: 0px;
+  padding: 50px;
+  padding-right: 120px;
+  width: 100%;
+  font-family: 'Abril Fatface', cursive;
+  background: #222;
+  color: white;
+  font-size: 55px;
+  position: relative;
+}
+blockquote::before {
+  content: '“';
+  position: absolute;
+  left: 0px;
+  top: -65px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 160px;
+}
+.bold {
+  font-weight: bold;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 26px;
+  margin-top: 50px;
+}
+h4{
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+h5 {
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  margin-top: -22px;
+}
+ul{
+  list-style-type: square;
+}
+.small {
+  font-size: 17px;
+}
+.training {
+  margin-bottom: 0px;
+}
