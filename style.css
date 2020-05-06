@@ -1,132 +1,168 @@
 * {
-  box-sizing: border-box;
-  }
+    box-sizing: border-box;
+    font-family: 'Judson', serif;
+}
+
 body {
-  background: black;
+    background-image: url('./background2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-header {
-  background: black;
-  width: 1000px;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  margin-left: -500px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.galleryBlock {
+    width: 1200px;
+    height: 700px;
+    margin: 100px auto;
 }
-nav {
-  width: 700px;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
+
+.photoviewer {
+    background-color: whitesmoke;
+    height: 500px;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 5px 10px -4px black;
+}
+#photo {
+    width: 1100px;
+    object-fit: cover;
+}
+
+button {
+    width: 50px;
+    background-color: whitesmoke;
+    border: none;
+    background-image: url(./arrow.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+}
+
+#right {
+    transform: scaleX(-1);
+}
+
+button:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.description {
+    margin-left: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    width: 1100px;
+    height: 110px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Quando', serif;
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin-top: 7px;
+    line-height: 1.2;
+}
+.thumbnails {
+    height: 80px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.thumbnail-box {
+    position: relative; 
+}
+
+.nahled {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border: 4px solid whitesmoke;  
+    box-shadow: 0px 3px 10px -5px black;      
+}
+.active-nahled {
+    margin-top: -5px;
+    box-shadow: 0px 8px 10px -5px black;
+}
+
+.nahled:hover {
+    margin-top: -1px;
+    border: 4px solid white; 
+    box-shadow: 0px 4px 10px -5px black;
+    cursor: pointer;
+}
+.active-nahled:hover {
+    margin-top: -5px;
+    box-shadow: 0px 8px 10px -5px black;
+    border: 4px solid whitesmoke;  
+}
+
+.hidden-title {
+    display: none;
+    position: absolute;
+    left: -30px;
+    top: -36px;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: whitesmoke;
+    width: 140px;
+    height: 26px;
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.thumbnail-box:hover .hidden-title {
+    display: block;
+}
+.thumbnail-box:hover .arrow-bottom {
+    display: block;
+}
+.arrow-bottom {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    height: 0px;
+    width: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.arrow-top {
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    height: 0px;
+    width: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid whitesmoke;
+    margin-top: -5px;
+}
+
+footer {
+    display:flex;
+    width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info {
+    font-size: 14px;
 }
 a {
-  display: block;
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  text-decoration: none;
-/*   background: orange; */
+    text-decoration: none;
+    color: green;
 }
-main{
-  width: 1000px;
-  margin-top: 75px;
-  background: white;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 21px;
-  letter-spacing: -0.3px;
-  line-height: 1.6;
-  color: #222;
-}
-section {
-  width: 100%;
-  display: flex;
-  margin-bottom: 30px;
-}
-aside {
-  width: 40%;
-}
-div {
-  width: 60%;
-  padding: 40px;
-}
-.title {
-  background-image: url('http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png');
-/*   background-size: 400px; */
-  background-repeat: no-repeat;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1600px;
-  position: relative;
-}
-h1{
-  font-family: 'Abril Fatface', cursive;
-  color: #222;
-  position: absolute;
-  font-size: 85px;
-  left: 50px;
-  bottom: -60px;
-  padding-bottom: 0px;
-  line-height: 1;
-}
-h2 {
-  font-family: 'Abril Fatface', cursive;
-  color: #222;
-  position: absolute;
-  left: 50px;
-  bottom: 150px;
-  font-size: 39px;
-  padding-bottom: 0px;
-}
-blockquote {
-  margin-left: 0px;
-  padding: 50px;
-  padding-right: 120px;
-  width: 100%;
-  font-family: 'Abril Fatface', cursive;
-  background: #222;
-  color: white;
-  font-size: 55px;
-  position: relative;
-}
-blockquote::before {
-  content: '“';
-  position: absolute;
-  left: 0px;
-  top: -65px;
-  font-family: 'Abril Fatface', cursive;
-  font-size: 160px;
-}
-.bold {
-  font-weight: bold;
-}
-h3 {
-  text-transform: uppercase;
-  letter-spacing: 1.8px;
-  font-size: 26px;
-  margin-top: 50px;
-}
-h4{
-  font-size: 25px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-h5 {
-  font-family: 'Merriweather', serif;
-  font-size: 17px;
-  margin-top: -22px;
-}
-ul{
-  list-style-type: square;
-}
-.small {
-  font-size: 17px;
-}
-.training {
-  margin-bottom: 0px;
+a:hover {
+    font-weight: bold;
 }
